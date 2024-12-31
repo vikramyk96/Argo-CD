@@ -4,6 +4,7 @@ metadata:
   labels:
     app: demoapp
   name: demoapp-dep
+  namespace: demoapp-ns
 spec:
   replicas: 1
   selector:

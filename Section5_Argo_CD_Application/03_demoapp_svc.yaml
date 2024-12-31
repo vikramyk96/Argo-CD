@@ -4,6 +4,7 @@ metadata:
   labels:
     app: demoapp
   name: demoapp-svc
+  namespace: demoapp-ns
 spec:
   ports:
   - name: demoapp-ports
