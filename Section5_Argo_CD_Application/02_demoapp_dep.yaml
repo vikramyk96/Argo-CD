@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: demoapp
+  name: demoapp-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demoapp-dep
+  template:
+    metadata:
+      labels:
+        app: demoapp
+    spec:
+      containers:
+      - image: thinknyx/demoapp:v1
+        name: demoapp
