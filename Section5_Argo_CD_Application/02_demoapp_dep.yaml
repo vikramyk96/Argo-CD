@@ -6,7 +6,7 @@ metadata:
   name: demoapp-dep
   namespace: demoapp-ns
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: demoapp
@@ -16,5 +16,5 @@ spec:
         app: demoapp
     spec:
       containers:
-      - image: thinknyx/demoapp:v2
+      - image: thinknyx/demoapp:v1
         name: demoapp
