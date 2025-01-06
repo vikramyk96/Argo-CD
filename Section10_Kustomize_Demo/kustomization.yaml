@@ -4,8 +4,9 @@ metadata:
   name: kustomize-inline-example
 
 resources:
-  - yaml_one
-  - yaml_two
+  - 01_kustomize_demoapp_ns.yaml
+  - 02_kustomize_demoapp_dep.yaml
+  - 03_kustomize_svc.yaml
 
 namePrefix: kustomize-
 
