@@ -16,5 +16,5 @@ spec:
         app: webappone
     spec:
       containers:
-      - image: thinknyx/webappone:v1
+      - image: thinknyx/demoapp:v1
         name: webappone
